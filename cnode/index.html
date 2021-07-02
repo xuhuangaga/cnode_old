@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2599277_ohose5h2g9b.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- 顶部 -->
+    <div class="header">
+      <div class="header-box w1100 m-auto flex-j-between a-center">
+        <div class="header-l">
+          <div class="flex-j-between">
+            <div class="header-l-img">
+              <img src="./images/cnodejs_light.svg" class="c-hand home">
+            </div>
+            <div class="p-relative">
+              <i class="iconfont icon-sousuo f-w-bold"></i>
+              <input type="text" id="ipt">
+            </div>
+          </div>
+        </div>
+        <div class="flex-j-between header-r f-c-c m-r10 f-size14">
+          <div class="home">首页</div>
+          <div>新手入门</div>
+          <div>API</div>
+          <div>关于</div>
+          <div>注册</div>
+          <div class="login" id="head_logindv">登录</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 中部 -->
+    <div class="middle">
+      <div class="middle-box w1100 flex-j-between m-auto p-tb20">
+        <!-- 中部左边 -->
+        <div class="middle-l">
+          <div class="middle-l-box flex f-size14 a-center b-t-lr-r-5">
+            <div class="tab tab-active c-hand">全部</div>
+            <div class="tab c-hand">精华</div>
+            <div class="tab c-hand">分享</div>
+            <div class="tab c-hand">问答</div>
+            <div class="tab c-hand">招聘</div>
+            <div class="tab c-hand">客户端测试</div>
+          </div>
+          <div class="bg-c-w middle-c" id="topic">
+            <!-- <div class="flex-j-between a-center topic_dv">
+              <div class="middle-c-l flex a-center">
+                <div><img class="head-pic" src="images/3118295.jpg"></div>
+                <div class="flex num_dv">
+                  <div class="reading-volume" title="回复数">27</div>
+                  <div class="slash">/</div>
+                  <div class="visits" title="点击数">62591</div>
+                </div>
+                <div class="tips">置顶</div>
+                <div class="topic-title" data="" title="">2021年3月6日Node Party PPT</div>
+              </div>
+              <div class="middle-c-r">
+                <div class="comment-date">1天前</div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <!-- 中部右边 -->
+        <div class="middle-r">
+          <div id="logindv">
+            <div class="p-10 topic b-t-lr-r-5 f-size14">
+              个人信息
+            </div>
+            <div class="middle-r-dv1 p-t10 p-l-r10 p-b10 bg-c-w f-size14">
+              <div class="flex a-center">
+                <div class="c-hand" id="userName">sdsds</div>
+              </div>
+              <div class="flex a-center m-t-b10">
+                <div>积分：</div>
+                <div class="point">255</div>
+              </div>
+              <div class="remark">"菜鸡前端。"</div>
+            </div>
+          </div>
+          <div class="middle-r-dv1 p-t20 p-l-r10 p-b10 bg-c-w" id="no-logindv">
+            <div class="f-size16">CNode：Node.js专业中文社区</div>
+            <div class="f-size14 m-t20 flex">您可以<div class="log-reg login c-hand"> 登录 </div>或<div
+                class="log-reg login c-hand"> 注册 </div>,也可以</div>
+            <div class="github f-c-w t-a-center m-t10 c-hand">通过 GitHub 登录</div>
+          </div>
+          <div class="p-10 topic b-t-lr-r-5 f-size14 m-t10">
+            无人回复的问题
+          </div>
+          <div class="topic-dv p-10 bg-c-w f-size14">
+            <div class="sl-one c-hand">使用 Socket.IO 进行授权和握手</div>
+            <div class="sl-one c-hand">是否可以使用nginx转发websocket实现Node远程调试？</div>
+            <div class="sl-one c-hand">typescript+nodejs报错：Cannot redeclare block-scoped variable.....</div>
+            <div class="sl-one c-hand">现在firefox的更新是不是在更新tab?</div>
+            <div class="sl-one c-hand">web如何检测Ipad上safari处于分屏模式</div>
+          </div>
+          <div class="p-10 topic b-t-lr-r-5 f-size14 m-t10">
+            积分榜 TOP 100 >>
+          </div>
+          <div class="topic-dv p-10 bg-c-w f-size14">
+            <div class="flex">
+              <div>22720</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">i5ting</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>15840</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">alsotang</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>10045</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">atian25</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>9350</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">leapon</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>8780</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">jiyinyiyong</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>7800</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">yakczh</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>6855</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">im-here</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>6135</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">DevinXian</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>5815</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">chapgaga</div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>5375</div>
+              <div class="m-l10">
+                <div class="t-d-none integral c-hand">magicdawn</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-10 topic b-t-lr-r-5 f-size14 m-t10">
+            友情社区
+          </div>
+          <div class="friend-comm-dv p-10 bg-c-w">
+            <div class="c-hand friend-comm"><img src="./images/ruby-china-20150529.png"></div>
+            <div class="c-hand friend-comm m-t-b10"><img src="./images/golangtc-logo.png" alt=""></div>
+            <div class="c-hand friend-comm"><img src="./images/phphub-logo.png" alt=""></div>
+          </div>
+          <div class="p-10 topic b-t-lr-r-5 f-size14 m-t10">
+            客户端二维码
+          </div>
+          <div class="p-10 bg-c-w">
+            <div class="t-a-center"><img src="//static.cnodejs.org/FtG0YVgQ6iginiLpf9W4_ShjiLfU" width="200px"
+                height="200px"></div>
+            <div class="c-hand integral f-size14 t-a-center">客户端源码地址</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer bg-c-w m-t20 f-size14 p-b20">
+      <div class="w1100 m-auto">
+        <div class="flex a-center f-title">
+          <div>RSS</div>
+          <div class="sx m-l10 m-r10 f-c-c"></div>
+          <div>源码地址</div>
+        </div>
+        <div class="m-t">CNode 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js 的技术研究。</div>
+        <div class="m-t">服务器搭建在<img src='./images/digitalocean.png' class="c-hand">
+          ，存储赞助商为<img src="./images/qiniu.png" class="c-hand"></div>
+        <div class="m-t">新手搭建 Node.js 服务器，推荐使用无需备案的 <a
+            class="f-a t-d-none c-hand">DigitalOcean(https://www.digitalocean.com/)</a></div>
+      </div>
+    </div>
+    <!-- 回到顶部 -->
+    <div id="backtotop">回到顶部</div>
+  </div>
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/dayjs.min.js"></script>
+  <script src="./js/comm.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2599277_ohose5h2g9b.css">
+  <link rel="stylesheet" href="./css/github-markdown.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- 顶部 -->
+    <div class="header">
+      <div class="header-box w1100 m-auto flex-j-between a-center">
+        <div class="header-l">
+          <div class="flex-j-between">
+            <div class="header-l-img">
+              <img src="./images/cnodejs_light.svg" class="c-hand home">
+            </div>
+            <div class="p-relative">
+              <i class="iconfont icon-sousuo f-w-bold"></i>
+              <input type="text" id="ipt">
+            </div>
+          </div>
+        </div>
+        <div class="flex-j-between header-r f-c-c m-r10 f-size14">
+          <div class="home">首页</div>
+          <div>新手入门</div>
+          <div>API</div>
+          <div>关于</div>
+          <div>注册</div>
+          <div class="login">登录</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 中部 -->
+    <div class="middle">
+      <div class="middle-box w1100 flex-j-between m-auto p-tb20">
+        <!-- 中部左边 -->
+        <div class="middle-l">
+          <div class="detail-box bg-c-w f-size14 b-t-lr-r-5 p-tb20">
+            <div class="flex a-i-end">
+              <div class="m-l10 tab c-hand f-w-bold f-size12" id="detail-top"></div>
+              <div class="m-l10 f-w-bold detail-title" id="detail-title"></div>
+            </div>
+            <div class="flex f-size12 introduce a-center">
+              <div class="yd"></div>
+              <div>发布于 </div>
+              <div id="detail-date">6个月前</div>
+              <div class="yd"></div>
+              <div>作者</div>
+              <div id="detail-author"></div>
+              <div class="yd"></div>
+              <div id="browse"></div>
+              <div>次浏览</div>
+              <div class="yd"></div>
+              <div>最后一次编辑是</div>
+              <div id="before">3个月之前</div>
+              <div class="yd"></div>
+              <div>来自</div>
+              <div id="from"></div>
+            </div>
+          </div>
+          <div class="p-10 bg-c-w middle-c  markdown-body" id="topic-content">内容</div>
+          <div class="middle-l-box flex f-size14 a-center b-t-lr-r-5 p-l10 m-t20" id="replies_count">
+
+          </div>
+          <div class="bg-c-w middle-c markdown-body" id="replies">
+            <!-- <div class="flex-j-between a-center replies_dv"> 
+              <div class="replies_l flex-a-center p-10">
+                <div class="m-r10"><img src="images/3118295.jpg" class="author_img"></div>
+                <div>
+                  <div class="flex-a-center">
+                    <div class="author_username">charleylla</div>
+                    <div class="flex-a-center floor m-lr10">
+                      <div>1楼</div>
+                      <div class="yd"></div>
+                      <div>3个月前</div>
+                    </div>
+                    <div class="author">作者</div>
+                  </div>
+                  <div class="m-l10 m-t5">同学们对于春招有任何疑问，欢迎在讨论区留下问题，我们会为你解答哦</div>
+                </div>
+              </div>
+              <div class="replies_r m-r10 flex-j-between a-center f-size14">
+                <i class="iconfont icon-dianzan"></i>
+                <div class="dz_count">8</div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <!-- 中部右边 -->
+        <div class="middle-r">
+          <div class="p-10 topic b-t-lr-r-5 f-size14">
+            作者
+          </div>
+          <div class="middle-r-dv1 p-t10 p-l-r10 p-b10 bg-c-w f-size14">
+            <div class="flex a-center">
+              <div><img src="" width="48" height="48" class="c-hand" id="author-img"></div>
+              <div class="m-l10  c-hand" id="userName"></div>
+            </div>
+            <div class="flex a-center m-t-b10">
+              <div>积分：</div>
+              <div class="point">255</div>
+            </div>
+            <div class="remark">"菜鸡前端。"</div>
+          </div>
+          <div class="p-10 topic b-t-lr-r-5 f-size14 m-t10">
+            其他作家话题
+          </div>
+          <div class="topic-dv p-10 bg-c-w f-size14">
+            <div class="sl-one c-hand">无</div>
+          </div>
+          <div class="p-10 topic b-t-lr-r-5 f-size14 m-t10">
+            无人回复的问题
+          </div>
+          <div class="topic-dv p-10 bg-c-w f-size14">
+            <div class="sl-one c-hand">使用 Socket.IO 进行授权和握手</div>
+            <div class="sl-one c-hand">是否可以使用nginx转发websocket实现Node远程调试？</div>
+            <div class="sl-one c-hand">typescript+nodejs报错：Cannot redeclare block-scoped variable.....</div>
+            <div class="sl-one c-hand">现在firefox的更新是不是在更新tab?</div>
+            <div class="sl-one c-hand">web如何检测Ipad上safari处于分屏模式</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer bg-c-w m-t20 f-size14 p-b20">
+      <div class="w1100 m-auto">
+        <div class="flex a-center f-title">
+          <div>RSS</div>
+          <div class="sx m-l10 m-r10 f-c-c"></div>
+          <div>源码地址</div>
+        </div>
+        <div class="m-t">CNode 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js 的技术研究。</div>
+        <div class="m-t">服务器搭建在<img src='./images/digitalocean.png' class="c-hand">
+          ，存储赞助商为<img src="./images/qiniu.png" class="c-hand"></div>
+        <div class="m-t">新手搭建 Node.js 服务器，推荐使用无需备案的 <a
+            class="f-a t-d-none c-hand">DigitalOcean(https://www.digitalocean.com/)</a></div>
+      </div>
+    </div>
+
+    <!-- 回到顶部 -->
+    <div id="backtotop">回到顶部</div>
+  </div>
+  <script src='js/jquery.min.js'></script>
+  <script src="./js/dayjs.min.js"></script>
+  <script src="./js/comm.js"></script>
+  <script>
+    //获取详情信息
+    //获取主题id
+    let search = location.search
+    let id = search.split('=')[1]
+    $.ajax({
+      url: `https://cnodejs.org/api/v1/topic/${id}`,
+      method: 'GET',
+      success: (res) => {
+        console.log(res);
+        if (res.success) {
+          let data = res.data
+          //显示标题前面的标签
+          let detail_top = document.getElementById('detail-top')
+          //来自
+          let from = document.getElementById('from')
+
+          if (data.top) {
+            //置顶绿色背景样式
+            detail_top.classList.add('tips')
+            detail_top.innerText = '置顶'
+            from.innerText = '置顶'
+            detail_top.classList.add('tab-active')
+          } else {
+            detail_top.style.display = 'none'
+          }
+          if (data.tab === 'share') {
+            from.innerText = '分享'
+          } else {
+            from.innerText = '问答'
+          }
+
+          //显示内容
+          document.getElementById('topic-content').innerHTML = data.content
+          //显示标题
+          document.getElementById('detail-title').innerText = data.title
+          //发布时间
+          document.getElementById('detail-date').innerText = getTime(data.create_at, new Date())
+          //作者
+          document.getElementById('detail-author').innerText = data.author.loginname
+          //浏览量
+          document.getElementById('browse').innerText = data.visit_count
+          //最后一次编辑的时间
+          document.getElementById('before').innerText = '3个月之前'
+          //头像
+          document.getElementById('author-img').src = data.author.avatar_url
+          //右边显示的作者
+          document.getElementById('userName').innerText = data.author.loginname
+
+
+          //显示详情信息
+          //显示评论总条数
+          document.getElementById('replies_count').innerText = `${data.replies.length}条回复`
+          if (data.replies.length > 0) {
+            data.replies.map((item, index) => {
+              //author loginname用户名
+              //author  avatar_url头像
+              //create_at 评论时间
+              //content 评论内容
+              //评论内容大盒子
+              let replies = document.getElementById('replies')
+
+              let replies_dv = document.createElement('div')
+              replies_dv.classList.add('flex-j-between')
+              replies_dv.classList.add('a-center')
+              replies_dv.classList.add('replies_dv')
+
+              let replies_l = document.createElement('div')
+              replies_l.classList.add('replies_l')
+              replies_l.classList.add('flex-a-center')
+              replies_l.classList.add('p-10')
+
+              let head_dv = document.createElement('div')
+              head_dv.classList.add('m-r10')
+
+              let head_img = document.createElement('img')
+              head_img.classList.add('author_img')
+              head_img.src = item.author.avatar_url
+              head_dv.appendChild(head_img)
+              replies_l.appendChild(head_dv)
+
+              let content_dv = document.createElement('div')
+
+              let content_dv1 = document.createElement('div')
+              content_dv1.classList.add('flex-a-center')
+
+              let author_username = document.createElement('div')
+              author_username.classList.add('author_username')
+              author_username.innerText = item.author.loginname
+              content_dv1.appendChild(author_username)
+
+              let floor_dv = document.createElement('div')
+              floor_dv.classList.add('flex-a-center')
+              floor_dv.classList.add('floor')
+              floor_dv.classList.add('m-lr10')
+
+              let floor = document.createElement('div')
+              floor.innerText = `${index + 1}楼`
+              floor_dv.appendChild(floor)
+
+              let yd = document.createElement('div')
+              yd.classList.add('yd')
+              floor_dv.appendChild(yd)
+
+              let date = document.createElement('div')
+              date.innerText = getTime(item.create_at, new Date())
+              floor_dv.appendChild(date)
+              content_dv1.appendChild(floor_dv)
+
+              if (item.author.loginname === data.author.loginname) {
+                let author_dv = document.createElement('div')
+                author_dv.classList.add('author')
+                author_dv.innerText = '作者'
+                content_dv1.appendChild(author_dv)
+              }
+
+              content_dv.appendChild(content_dv1)
+
+              let content = document.createElement('div')
+              content.classList.add('m-l10')
+              content.classList.add('m-t5')
+              content.innerHTML = item.content
+              content_dv.appendChild(content)
+
+              replies_l.appendChild(content_dv)
+              replies_dv.appendChild(replies_l)
+
+              if (item.ups.length > 0) {
+                let replies_r = document.createElement('div')
+                replies_r.classList.add('replies_r')
+                replies_r.classList.add('m-r10')
+                replies_r.classList.add('flex-j-between')
+                replies_r.classList.add('a-center')
+                replies_r.classList.add('f-size14')
+
+                let icon = document.createElement('i')
+                icon.classList.add('iconfont')
+                icon.classList.add('icon-dianzan')
+                replies_r.appendChild(icon)
+
+                let dz_count = document.createElement('div')
+                dz_count.classList.add('dz_count')
+                dz_count.innerText = item.ups.length
+                replies_r.appendChild(dz_count)
+
+                replies_dv.appendChild(replies_r)
+              }
+
+              if (item.ups.length > 5) {
+                replies_dv.style.backgroundColor = 'rgb(244,252,240)'
+              }
+
+              replies.appendChild(replies_dv)
+            })
+          }
+        }
+      },
+      error: (err) => {
+        console.log(`请求数据失败${err}`);
+      }
+    })
+  </script>
+</body>
+
+</html>

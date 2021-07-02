@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2599277_ohose5h2g9b.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- 顶部 -->
+    <div class="header">
+      <div class="header-box w1100 m-auto flex-j-between a-center">
+        <div class="header-l">
+          <div class="flex-j-between">
+            <div class="header-l-img">
+              <img src="./images/cnodejs_light.svg" class="c-hand home">
+            </div>
+            <div class="p-relative">
+              <i class="iconfont icon-sousuo f-w-bold"></i>
+              <input type="text" id="ipt">
+            </div>
+          </div>
+        </div>
+        <div class="flex-j-between header-r f-c-c m-r10 f-size14">
+          <div class="home">首页</div>
+          <div>新手入门</div>
+          <div>API</div>
+          <div>关于</div>
+          <div>注册</div>
+          <div id="login">登录</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 中部 -->
+    <div class="middle">
+      <div class="middle-box w1100 flex-j-between m-auto p-tb20">
+        <!-- 中部左边 -->
+        <div class="middle-l">
+          <div class="topic b-t-lr-r-5 f-size14 m-t10">
+            <div class="flex p-10 ">
+              <div class="login-index home c-hand">主页</div>
+              <div class="m-l10 m-r10 login-m-t">/</div>
+              <div class="login-m-t btn-login">登录</div>
+            </div>
+            <div class="login-dv p-t20">
+              <div class="flex a-center login-ipt-dv">
+                <div class="lipt-dvl m-r20 flex a-center">
+                  <div class="red">*</div>
+                  <div>请输入用户名</div>
+                </div>
+                <div><input type="text" class="login-ipt" id="username"></div>
+              </div>
+              <div id="username_erromsg" class="red f-size12">&nbsp;</div>
+              <div class="flex a-center login-ipt-dv">
+                <div class="lipt-dvl m-r20 flex a-center">
+                  <div class="red">*</div>
+                  <div>请输入密码</div>
+                </div>
+                <div><input type="password" class="login-ipt" id="pwd"></div>
+              </div>
+              <div id="pwd_erromsg" class="red f-size12">&nbsp;</div>
+              <div class="flex a-center login-ipt-dv">
+                <div class="lipt-dvl m-r20 flex a-center">
+                  <div class="red">*</div>
+                  <div>请输入确认密码</div>
+                </div>
+                <div><input type="password" class="login-ipt" id="confirmpwd"></div>
+              </div>
+              <div id="confirmpwd_erromsg" class="red f-size12">&nbsp;</div>
+              <div class="flex a-center login-ipt-dv login-b-btn">
+                <div class="lipt-dvl  m-r20"></div>
+                <div class="flex a-center">
+                  <div class="c-hand btn-login-click t-a-center m-r10" id="login_btn">登录</div>
+                  <div class="github f-c-w t-a-center c-hand m-r10">通过 GitHub 登录</div>
+                  <div class="forget-pwd c-hand">忘记密码了？</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 中部右边 -->
+        <div class="middle-r">
+          <div class="p-10 topic b-t-lr-r-5 f-size14 m-t10">
+            关于
+          </div>
+          <div class="middle-r-dv1 p-t20 p-l-r10 p-b10 bg-c-w f-size14">
+            <div>CNode：Node.js专业中文社区</div>
+            <div class="m-t-b20">在这里你可以：</div>
+            <div class="flex a-center m-l10">
+              <div class="yd middle-yd"></div>
+              <div>向别人提出你遇到的问题</div>
+            </div>
+            <div class="flex a-center m-l10">
+              <div class="yd middle-yd"></div>
+              <div class="m-t-b10">帮助遇到问题的人</div>
+            </div>
+            <div class="flex a-center m-l10">
+              <div class="yd middle-yd"></div>
+              <div class="m-b10">分享自己的知识</div>
+            </div>
+            <div class="flex a-center m-l10">
+              <div class="yd middle-yd"></div>
+              <div>和其它人一起进步</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer bg-c-w m-t20 f-size14 p-b20">
+      <div class="w1100 m-auto">
+        <div class="flex a-center f-title">
+          <div>RSS</div>
+          <div class="sx m-l10 m-r10 f-c-c"></div>
+          <div>源码地址</div>
+        </div>
+        <div class="m-t">CNode 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js 的技术研究。</div>
+        <div class="m-t">服务器搭建在<img src='./images/digitalocean.png' class="c-hand">
+          ，存储赞助商为<img src="./images/qiniu.png" class="c-hand"></div>
+        <div class="m-t">新手搭建 Node.js 服务器，推荐使用无需备案的 <a
+            class="f-a t-d-none c-hand">DigitalOcean(https://www.digitalocean.com/)</a></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/comm.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    let flag = true
+    let flag1 = true
+    let flag2 = true
+    //登录按钮
+    let login_btn = document.getElementById('login_btn')
+
+    //用户名错误提示盒子
+    let username_erromsg = document.getElementById('username_erromsg')
+
+    //密码错误提示盒子
+    let pwd_erromsg = document.getElementById('pwd_erromsg')
+
+    //确认密码错误提示盒子
+    let confirmpwd_erromsg = document.getElementById('confirmpwd_erromsg')
+
+    //用户名输入框
+    let username = document.getElementById('username')
+
+    //密码输入框
+    let pwd = document.getElementById('pwd')
+
+    //确认密码输入框
+    let confirmpwd = document.getElementById('confirmpwd')
+
+    //点击登录
+    login_btn.addEventListener('click', () => {
+      //验证输入的用户名
+      checkUserName(username.value.trim())
+
+      //验证输入的密码
+      checkPwd(pwd.value.trim())
+
+      //验证输入的确认密码
+      checkConfirmPwd(confirmpwd.value.trim())
+
+      //请求ajax  并接收返回结果
+      if (flag && flag1 && flag2) {
+        $.ajax({
+          url: 'https://www.liulongbin.top:8888/api/private/v1/login',
+          method: 'POST',
+          data: {
+            'username': username.value.trim(),
+            'password': pwd.value.trim()
+          },
+          success: (res) => {
+            // console.log(res);
+            if (res.data !== null) {
+              //存储数据
+              localStorage.setItem('username', res.data.username)
+              // 跳转首页
+              window.open('index.html', '_self')
+            } else {
+              //提示结果
+              alert(res.meta.msg)
+            }
+          },
+          erro: (err) => {
+            console.log(`请求失败${err}`);
+          }
+        })
+      }
+    })
+
+    //验证用户名
+    username.addEventListener('blur', (e) => {
+      let value = e.target.value.trim()
+      checkUserName(value)
+    })
+
+    //验证密码
+    pwd.addEventListener('blur', (e) => {
+      let value = e.target.value.trim()
+      checkPwd(value)
+    })
+
+    //验证确认密码
+    confirmpwd.addEventListener('blur', (e) => {
+      let value = e.target.value.trim()
+      checkConfirmPwd(value)
+    })
+
+    //验证用户名
+    function checkUserName(value) {
+      // debugger
+      if (value.length > 0) {
+        if (value.length >= 3 && value.length <= 6) {
+          username_erromsg.innerHTML = '&nbsp;'
+          username.style.border = '1px solid #ccc'
+          flag = true
+        } else {
+          username_erromsg.innerText = '用户名长度在3-5个字符'
+          username.style.border = '1px solid red'
+          flag = false
+        }
+      } else {
+        username_erromsg.innerText = '请输入用户名'
+        username.style.border = '1px solid red'
+        flag = false
+      }
+    }
+    //验证密码
+    function checkPwd(value) {
+      if (value.length > 0) {
+        if (value.length >= 6 && value.length <= 10) {
+          pwd_erromsg.innerHTML = '&nbsp;'
+          pwd.style.border = '1px solid #ccc'
+          flag1 = true
+        } else {
+          pwd_erromsg.innerText = '密码长度在6-10个字符'
+          pwd.style.border = '1px solid red'
+          flag1 = false
+        }
+      } else {
+        pwd_erromsg.innerText = '请输入密码'
+        pwd.style.border = '1px solid red'
+        flag1 = false
+      }
+    }
+    //验证确认密码
+    function checkConfirmPwd(value) {
+      //判断确认密码和密码输入是否一致
+      if (value === pwd.value.trim()) {
+        confirmpwd_erromsg.innerHTML = '&nbsp;'
+        confirmpwd.style.border = '1px solid #ccc'
+        flag2 = true
+      } else {
+        confirmpwd_erromsg.innerText = '两次密码必须输入一致'
+        confirmpwd.style.border = '1px solid red'
+        flag2 = false
+      }
+    }
+  </script>
+</body>
+
+</html>

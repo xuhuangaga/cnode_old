@@ -1,0 +1,442 @@
+/* 容器div */
+.container {
+  margin: 0 auto;
+  width: 1350px;
+  min-width: 1124px;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* 头部 */
+.header {
+  background-color: rgb(68, 68, 68);
+}
+
+.header-box {
+  height: 50px;
+}
+
+/* 中部 */
+.middle {
+  background-color: rgb(225, 225, 225);
+}
+
+/* 头部右边盒子 */
+.header-r {
+  width: 400px;
+}
+
+/* logo盒子 */
+.header-l-img {
+  width: 120px;
+
+}
+
+/* logo图片 */
+.header-l-img img {
+  width: auto;
+}
+
+/* 头部左边盒子 */
+.header-l {
+  width: 400px;
+}
+
+/* 顶部输入框 */
+#ipt {
+  width: 230px;
+  background-color: rgb(136, 136, 136);
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 20px;
+  padding: 5px 5px 5px 24px;
+  height: 20px;
+  color: #666;
+}
+
+#ipt:hover {
+  background-color: #fff;
+}
+
+.icon-sousuo {
+  color: rgb(89, 90, 89) !important;
+  position: absolute;
+  left: 6px;
+  top: 5px;
+}
+
+.header-r div {
+  cursor: pointer;
+}
+
+.header-r div:hover {
+  color: #fff;
+}
+
+.header-l {
+  width: 420px;
+}
+
+.tab {
+  color: rgb(128, 189, 1);
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.tab:hover {
+  color: rgb(0, 85, 128);
+}
+
+.tab-active {
+  color: #fff;
+  background-color: rgb(128, 189, 1);
+}
+
+.tab-active:hover {
+  color: #fff;
+}
+
+.middle-l {
+  width: 780px;
+  border-radius: 5px;
+}
+
+.middle-r {
+  width: 300px;
+  color: rgb(51, 51, 51);
+}
+
+.middle-l-box {
+  background-color: rgb(246, 246, 246);
+  height: 40px;
+}
+
+
+.github {
+  background-color: rgb(91, 192, 222);
+  width: 150px;
+  border-radius: 3px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.github:hover {
+  background-color: rgb(47, 150, 180);
+}
+
+.log-reg {
+  color: rgb(119, 144, 185);
+  text-decoration: none;
+  margin: 0px 4px;
+}
+
+.log-reg:hover {
+  text-decoration: underline;
+}
+
+.topic {
+  background-color: rgb(246, 246, 246);
+}
+
+.topic-dv div {
+  height: 30px;
+  color: rgb(119, 128, 135);
+}
+
+.integral,
+.footer {
+  color: rgb(119, 128, 135);
+
+}
+
+.integral:hover {
+  text-decoration: underline;
+}
+
+.friend-comm img {
+  width: 150px;
+  height: 100%;
+}
+
+.footer .sx {
+  height: 16px;
+}
+
+.f-title {
+  color: rgb(102, 102, 102);
+}
+
+.m-t {
+  margin-top: 6px;
+}
+
+.f-a {
+  color: rgb(0, 151, 219);
+}
+
+.f-a:hover {
+  color: rgb(0, 85, 128);
+  text-decoration: underline;
+}
+
+.middle-yd {
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+}
+
+.login-m-t {
+  color: rgb(119, 128, 151);
+}
+
+.login-index {
+  color: rgb(128, 189, 1);
+}
+
+.login-index:hover {
+  text-decoration: underline;
+}
+
+.login-ipt {
+  width: 270px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 6px;
+  outline: none;
+}
+
+.login-ipt:focus {
+  box-shadow: rgb(117, 185, 240) 0 0 10px;
+  border: 1px solid rgb(117, 185, 240);
+}
+
+.login-dv {
+  padding-left: 114px;
+  background-color: #fff;
+}
+
+.btn-login-click {
+  background-color: rgb(0, 136, 204);
+  border-radius: 3px;
+  color: #fff;
+  width: 32px;
+  padding: 3px 10px;
+  height: 28px;
+  line-height: 28px;
+}
+
+.btn-login-click:hover {
+  background-color: rgb(0, 85, 204);
+}
+
+.lipt-dvl {
+  width: 110px;
+  text-align: right;
+}
+
+.login-b-btn {
+  margin: 20px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
+}
+
+.forget-pwd {
+  color: rgb(119, 128, 135);
+}
+
+.forget-pwd:hover {
+  text-decoration: underline;
+}
+
+#userName {
+  color: #778087;
+}
+
+.remark {
+  font-style: italic;
+}
+
+#detail-top {
+  padding: 2px 4px;
+}
+
+.detail-title {
+  font-size: 22px;
+}
+
+.detail-box {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.introduce {
+  color: #838383;
+  margin: 14px 0px 0px 20px;
+}
+
+.detail-box .yd {
+  background-color: #838383;
+  width: 5px;
+  height: 5px;
+  margin: 0px 4px;
+}
+
+#detail-date,
+#detail-author,
+#browse,
+#from,
+#before {
+  margin: 0px 4px;
+}
+
+.head-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.reading-volume {
+  color: #9e78c0;
+  font-size: 14px;
+}
+
+.slash {
+  margin: 0 3px;
+  font-size: 10px;
+}
+
+.visits {
+  font-size: 10px;
+  color: #b4b4b4;
+}
+
+.tips {
+  background: #80bd01;
+  padding: 2px 4px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-left: 3px;
+}
+
+.tips1 {
+  background: rgb(229, 229, 229);
+  padding: 2px 4px;
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  border-radius: 3px;
+  margin-left: 3px;
+}
+
+.topic-title {
+  max-width: 70%;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-left: 6px;
+}
+
+.topic-title:hover {
+  text-decoration: underline;
+}
+
+.comment-date {
+  color: #778087;
+  font-size: 11px;
+}
+
+.topic_dv {
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid #f0f0f0;
+}
+.topic_dv:hover {
+  background-color: #f0f0f0;
+}
+
+.num_dv {
+  width: 70px;
+  text-align: center;
+}
+
+.middle-c-l {
+  width: 700px;
+}
+
+.author {
+  color: #fff;
+  background-color: #6ba44e;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.floor {
+  color: #08c;
+  font-size: 11px;
+}
+.floor:hover {
+  text-decoration: underline;
+}
+
+.floor .yd {
+  width: 5px;
+  height: 5px;
+  background-color: #08c;
+}
+.author_img {
+  width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+.author_username {
+  color: #666;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.replies_dv {
+  border-bottom: 1px solid #e5e5e5;
+}
+.replies_r {
+  color:gray
+}
+.dz_count {
+  margin-left: 5px;
+}
+
+/* 回到顶部 */
+#backtotop {
+  width: 24px;
+    color: gray;
+    padding: 12px 0 12px 5px;
+    display: none;
+    position: fixed; 
+    top: 224px;
+    right: 0px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 20;
+    background-color: #fff;
+    border-radius: 12px 0 0 12px;
+}
+.red {
+  color: red;
+  margin-right: 5px;
+}
+#username_erromsg,#confirmpwd_erromsg,#pwd_erromsg {
+  position: relative;
+    left: 20%;
+    margin: 4px 0px;
+    /* display: none; */
+}
+#no-logindv,#logindv{
+  display: none;
+}
